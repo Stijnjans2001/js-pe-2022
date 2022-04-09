@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Hier komt jouw naam</title>
+</head>
+
+<body onload='oefening0()'>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Hier komt jouw logo</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Oefening 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" onclick='oefening2()'>Oefening 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" onclick='oefening3()'>Oefening 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-5">
+            <div class='oefening1'>
+                <!-- Hier mag je HTML code toevoegen -->
+                <div class="row" id="formulier-div">
+                    <div class="col-md-8 container">
+                        <h2>Javascribble</h2>
+                        <p>Abonneer op onze JavaScript nieuwsbrief!</p>
+                        <form name="Formulier" id="id-formulier" action="#" method="dialog">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Voornaam">Voornaam</label><br>
+                                    <input type="text" class="form-control" placeholder="Uw voornaam" name="InputVoornaam">
+                                </div>
+                                <div class="col">
+                                    <label for="Naam">Naam</label><br>
+                                    <input type="text" class="form-control" placeholder="Uw naam" name="InputNaam">
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="E-mailadres">E-mailadres</label><br>
+                                    <input type="email" class="form-control" placeholder="mail@example.be" name="InputE-mailadres">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Adres" class="form-check-label">Adres</label><br>
+                                    <input type="text" class="form-control" placeholder="Uw adres en huisnummer" name="InputAdres">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Land" class="form-check-label">Land</label><br>
+                                    <select class="form-control" name="InputLand">
+                                      <option value="">Kies een land</option>
+                                      <option value= "België">België</option>
+                                      <option value= "Duitsland">Duitsland</option>
+                                      <option value= "Frankrijk">Frankrijk</option>
+                                      <option value= "Nederland">Nederland</option>
+                                  </select>
+                                </div>
+                                <div class="col">
+                                    <label for="Provincie" class="form-check-label">Provincie</label><br>
+                                    <select class="form-control" name="InputProvincie">
+                                      <option value="">Kies een provincie</option>
+                                          <optgroup label="Belgische provincies">
+                                              <option value= "België1">Antwerpen</option>
+                                              <option value= "België2">Henegouwen</option>
+                                              <option value= "België3">Limburg</option>
+                                              <option value= "België4">Luik</option>
+                                              <option value= "België5">Luxemburg</option>
+                                              <option value= "België6">Namen</option>
+                                              <option value= "België7">Oost-Vlaanderen</option>
+                                              <option value= "België8">Vlaams-Brabant</option>
+                                              <option value= "België9">Waals-Brabant</option>
+                                              <option value= "België10">West-Vlaanderen</option>
+                                          </optgroup>
+                                          <optgroup label="Duitse provincies">
+                                              <option value= "Duitsland1">Baden-Württemberg</option>
+                                              <option value= "Duitsland2">Beieren</option>
+                                              <option value= "Duitsland3">Berlijn</option>
+                                              <option value= "Duitsland4">Branderburg</option>
+                                              <option value= "Duitsland5">Bremen</option>
+                                              <option value= "Duitsland6">Hamburg</option>
+                                              <option value= "Duitsland7">Hessen</option>
+                                              <option value= "Duitsland8">Mecklenburg-Voor-Pommeren</option>
+                                              <option value= "Duitsland9">Nedersaksen</option>
+                                              <option value= "Duitsland10">Noordrijn-Westfalen</option>
+                                              <option value= "Duitsland11">Rijnland-Palts</option>
+                                              <option value= "Duitsland12">Saarland</option>
+                                              <option value= "Duitsland13">Saksen</option>
+                                              <option value= "Duitsland14">Saksen-Anhalt</option>
+                                              <option value= "Duitsland15">Sleeswijk-Holstein</option>
+                                              <option value= "Duitsland16">Thüringen</option>
+                                          </optgroup>
+                                          <optgroup label="Franse provincies">
+                                              <option value= "Frankrijk1">Angoumois</option>
+                                              <option value= "Frankrijk2">Anjou</option>
+                                              <option value= "Frankrijk3">Artesië</option>
+                                              <option value= "Frankrijk39">Aunis</option>
+                                              <option value= "Frankrijk4">Auvergne</option>
+                                              <option value= "Frankrijk5">Avignon et Comtat Venaissin</option>
+                                              <option value= "Frankrijk6">Béarn</option>
+                                              <option value= "Frankrijk7">Berry</option>
+                                              <option value= "Frankrijk8">Bourbonnais</option>
+                                              <option value= "Frankrijk9">Bourgondië</option>
+                                              <option value= "Frankrijk10">Bretagne</option>
+                                              <option value= "Frankrijk11">Champagne</option>
+                                              <option value= "Frankrijk12">Corsica</option>
+                                              <option value= "Frankrijk13">Dauphiné</option>
+                                              <option value= "Frankrijk14">Elzas</option>
+                                              <option value= "Frankrijk15">Foix</option>
+                                              <option value= "Frankrijk16">Franche-Comté</option>
+                                              <option value= "Frankrijk17">Guyenne et Gasconje</option>
+                                              <option value= "Frankrijk18">Ïle-de-France</option>
+                                              <option value= "Frankrijk19">Languedoc</option>
+                                              <option value= "Frankrijk20">Limousin</option>
+                                              <option value= "Frankrijk21">Lotharingen</option>
+                                              <option value= "Frankrijk22">Lyonnais</option>
+                                              <option value= "Frankrijk23">Maine</option>
+                                              <option value= "Frankrijk24">Marche</option>
+                                              <option value= "Frankrijk25">Montbéliard</option>
+                                              <option value= "Frankrijk26">Mulhouse</option>
+                                              <option value= "Frankrijk27">Nivernais</option>
+                                              <option value= "Frankrijk28">Nizza</option>
+                                              <option value= "Frankrijk29">Normandië</option>
+                                              <option value= "Frankrijk30">Orléanais</option>
+                                              <option value= "Frankrijk31">Picardië</option>
+                                              <option value= "Frankrijk32">Poitou</option>
+                                              <option value= "Frankrijk33">Provence</option>
+                                              <option value= "Frankrijk34">Roussillon</option>
+                                              <option value= "Frankrijk35">Saintonge</option>
+                                              <option value= "Frankrijk36">Savoye</option>
+                                              <option value= "Frankrijk37">Touraine</option>
+                                              <option value= "Frankrijk38">Vlaanderen</option>
+                                          </optgroup>
+                                          <optgroup label="Nederlandse provincies">
+                                              <option value= "Nederland1">Drethe</option>
+                                              <option value= "Nederland2">Flevoland</option>
+                                              <option value= "Nederland3">Friesland</option>
+                                              <option value= "Nederland4">Gelderland</option>
+                                              <option value= "Nederland5">Groningen</option>
+                                              <option value= "Nederland6">Limburg</option>
+                                              <option value= "Nederland7">Noord-Brabant</option>
+                                              <option value= "Nederland8">Noord-Holland</option>
+                                              <option value= "Nederland9">Overijssel</option>
+                                              <option value= "Nederland10">Utrecht</option>
+                                              <option value= "Nederland11">Zeeland</option>
+                                              <option value= "Nederland12">Zuid-Holland</option>
+                                          </optgroup>
+                                  </select>
+                                </div>
+                                <div class="col">
+                                    <label for="Postcode">Postcode</label><br>
+                                    <input type="number" class="form-control" placeholder="" name="InputPostcode" min="1000" max="9999">
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                            <div class="row">
+                                <input type="submit" class="btn btn-primary" value="Send me!" style="width: 100%;" onclick="validateForm()"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Tot en met hier -->
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class='oefening2'>
+                <table class='table table-bordered'>
+                    <tbody id='tableBody'>
+                        <tr id='tableRow'></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class='oefening3'></div>
+        </div>
+    </div>
+
+    <script src='oefening0.js '></script>
+    <script src='oefening1.js '></script>
+    <script src='oefening2.js '></script>
+    <script src='oefening3.js '></script>
+</body>
+
+</html>
